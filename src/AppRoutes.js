@@ -4,8 +4,18 @@ import {Route} from 'react-router';
 export const AppRoutes = () => {
     return (
         <>
-        <Route  path = "/"  component = {Index} />
-        <Route path ="/home" component = {Home} />
+        <Route  path = "/">
+        <Index />
+        </Route>
+        
+        <Route path ="/home">
+        <Home />
+        </Route>
+        
+        <Route path ="/">
+        <NotFound />
+        </Route>
+        
         </>
 
     )
